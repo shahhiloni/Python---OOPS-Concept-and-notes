@@ -10,7 +10,7 @@ class Animal:
     def sound(self):
         print("Animals make sounds")
         
-# // child Class
+# Child Class
 class Dog(Animal):
     def bark(self):
         print("Dog barks")
