@@ -23,7 +23,7 @@
 
 mother and Father (Parent Class) -- > Child Class
 
-3. Multi- level Inheritance : GrearGrandParent Class --> GrandParent Class --> Parent Class --> Child Class
+3. Multi- level Inheritance : GreatGrandParent Class --> GrandParent Class --> Parent Class --> Child Class
 
 4. Hirechrical Inheritance : Hello --> good, bad 
 5. Hybrid Inheritance : Combining More than two inheritance method 
