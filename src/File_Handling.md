@@ -8,4 +8,10 @@ open() - function
 # 4. deleting a file - deleting data from the file or delete the entire file 
 # 5. appending a file - update the existing data 
 
-
+# mode : 
+# "r" - read
+# "w" - write 
+# "a" - append
+# "x" - creating a new file (fails if the file already exists)
+# "rb" - read binary file 
+# "wb" - write binary file

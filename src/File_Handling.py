@@ -2,15 +2,6 @@
 
 # file = open ("filename.txt", "mode")
 
-
-# mode : 
-# "r" - read
-# "w" - write 
-# "a" - append
-# "x" - creating a new file (fails if the file already exists)
-# "rb" - read binary file 
-# "wb" - write binary file 
-
 # reading a file : read(), readline(), readlines()
 
 file = open ("filename.txt", "r")
