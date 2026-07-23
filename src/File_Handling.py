@@ -27,13 +27,10 @@ else:
 
 
 #deleting a file - remove()
-
 import os 
 os.remove("filename.txt")
 
-
 #with statement - using for automatically closing the file 
-
 with open("filename.txt", "w") as file:
     file.write("hello, Good morning")
 

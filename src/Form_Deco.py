@@ -17,12 +17,9 @@ def validate_registration(func):
 
     return wrapper
 
-
 @validate_registration
 def register(username, password):
     print("\nRegistration Successful")
     print("Username:", username)
     
-
-
 register()
