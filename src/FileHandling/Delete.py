@@ -28,4 +28,5 @@ def delete_student():
     else:
         print("Student Not Found")
 
+os.remove("hello.txt")
 delete_student()
