@@ -15,27 +15,19 @@
 # Logging
 # Timing
 # Error Handling
+is_logged_in = False
 
-
-def my_decorator(func):
-
+def login_required(func):
     def wrapper():
-        print("Before Function")
-
-        func()
-
-        print("After Function")
-
+        if is_logged_in:
+            func()
+        else:
+            print("Please Login First")
     return wrapper
 
-@my_decorator
-def greet():
-    print("Hello Students")
+@login_required
+def dashboard():
+    print("Welcome to Dashboard")
 
+dashboard()
 
-greet()
-
-# greet() is the original function.
-# @my_decorator wraps the greet() function.
-# Before greet() executes, "Before Function" is printed.
-# After greet() finishes, "After Function" is printed.
