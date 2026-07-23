@@ -4,6 +4,8 @@
 # load() → Reads JSON data from a file and converts it into Python objects.
 
 #dump() : Write Python Data to JSON File
+
+# Python → JSON File
 import json
 
 student = {
@@ -18,6 +20,7 @@ with open("student.json", "w") as file:
 print("Data saved successfully.")
 
 #load() : Read JSON File
+# JSON File → Python
 
 import json
 
