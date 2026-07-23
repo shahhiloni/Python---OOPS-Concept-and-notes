@@ -31,3 +31,10 @@ print(data)
 print(data["name"])
 print(data["age"])
 print(data["course"])
+
+# Note:
+
+# json.dumps()	json	Python → JSON String
+# json.loads()	json	JSON String → Python
+# pickle.dump()	pickle	Python → Binary File
+# pickle.load()	pickle	Binary File → Python
