@@ -1,40 +1,27 @@
-# load() and dump() are functions from Python's json module that are used to work with JSON data.
+# load () - reads JSON Data from a file and converts it into python objects
 
-# dump() → Writes Python data into a JSON file.
-# load() → Reads JSON data from a file and converts it into Python objects.
+# dump() - write python data to JSON File 
 
-#dump() : Write Python Data to JSON File
 
-# Python → JSON File
 import json
 
 student = {
-    "name": "Hiloni",
-    "age": 23,
-    "course": "Python"
+    "name": "xyz", 
+    "email": "xyz@gmail.com", 
+    "course": "python"
 }
 
-with open("student.json", "w") as file:
+with open("studentss.json", "w") as file:
     json.dump(student, file)
 
-print("Data saved successfully.")
 
-#load() : Read JSON File
-# JSON File → Python
+with open("studentss.json", "r") as file:
+   xxx = json.load(file)
 
-import json
+#    json.load(file ) = value 
+print("data insert successfully")
 
-with open("student.json", "r") as file:
-    data = json.load(file)
 
-print(data)
-print(data["name"])
-print(data["age"])
-print(data["course"])
 
-# Note:
 
-# json.dumps()	json	Python → JSON String
-# json.loads()	json	JSON String → Python
-# pickle.dump()	pickle	Python → Binary File
-# pickle.load()	pickle	Binary File → Python
+
