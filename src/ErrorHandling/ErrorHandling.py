@@ -1,68 +1,46 @@
-# In Python, error handling is done using the try, except, else, and finally blocks. 
-# This allows your program to handle runtime errors gracefully instead of crashing.
+## in python we use methods for error  handling like try, except, else and finally blocks.
+
+## try method for error handling 
+
+# try: 
+#   num = int(input ("Enter a number: "))
+#   result = 10000/ num
+#   print(result)
+
+# except ZeroDivisionError:
+#     print("cannot divide by zero")
+
+# except ValueError: 
+#    print("please enter valid integer")
 
 
-## basic syntax
-try:
-    x = 10 / 0
+## Cacheing  : except
+   
+# try: 
+#    x = int("jgbjkbbu")
 
-except ZeroDivisionError:
-    print("Cannot divide by zero.")
-
-
-## Handling Multiple Exceptions
-try:
-    num = int(input("Enter a number: "))
-    result = 100 / num
-    print(result)
-
-except ValueError:
-    print("Please enter a valid integer.")
-
-except ZeroDivisionError:
-    print("Division by zero is not allowed.")
+# except Exception as e:
+#    print("error", e)
 
 
-# Catching Any Exception
+## else : 
 
-try:
-    x = int("abc")
+# try: 
+#    num = int(input("enter a number:"))
+# except ValueError: 
+#    print("invalid number")
+# else: 
+#    print("entered:", num)
 
-except Exception as e:
-    print("An error occurred:", e)
 
-# Using else : The else block executes only if no exception occurs.
-    
-try:
-    num = int(input("Enter a number: "))
-except ValueError:
-    print("Invalid input.")
-else:
-    print("You entered:", num)
+## finally : use in file handling concept, use for execution
+try: 
+   file = open("data.txt", "r")
+   print(file.read())
 
-# Using finally : The finally block always executes, whether an exception occurs or not.
+except FileNotFoundError: 
+   print("file not found")
 
-try:
-    file = open("data.txt", "r")
-    print(file.read())
-except FileNotFoundError:
-    print("File not found.")
-finally:
-    print("Execution completed.")
-
-# Raising Exceptions : You can raise your own exceptions using raise.
-    
-age = -5
-
-if age < 0:
-    raise ValueError("Age cannot be negative.")
-
-# Custom Exceptions
-
-class InvalidAgeError(Exception):
-    pass
-
-age = -2
-
-if age < 0:
-    raise InvalidAgeError("Invalid age entered.")
+finally: 
+   print("file execution completed")
+   
