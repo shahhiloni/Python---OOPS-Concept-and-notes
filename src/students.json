@@ -1,0 +1,12 @@
+{
+    "Rahul": {
+        "Age": 20,
+        "Course": "Python",
+        "Marks": 90
+    },
+    "Priya": {
+        "Age": 21,
+        "Course": "Java",
+        "Marks": 85
+    }
+}
